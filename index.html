@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+
+    <title>HTML + CSS</title>
+  </head>
+  <body>
+    <model-viewer
+      src="modles/130.glb"
+      ios-src="modles/130.usdz"
+      style="width: 100vw; height: 90vh"
+      camera-controls
+      shadow-intensity="2"
+      touch-action="pan-y"
+      ar
+      scale="0.1 0.1 0.1"
+    >
+      <button id="ar-button" slot="ar-button">Start AR</button>
+    </model-viewer>
+  </body>
+
+  <style>
+    #ar-button {
+      width: 120px;
+      height: 60px;
+      position: absolute;
+      right: 35px;
+      bottom: 35px;
+      background-color: rgb(64, 203, 203);
+      color: white;
+      border: none;
+      font-size: 20px;
+    }
+  </style>
+</html>
